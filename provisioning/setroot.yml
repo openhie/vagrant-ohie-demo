@@ -1,0 +1,8 @@
+---
+- name: Set root private key
+  user: vagrant
+  sudo: yes
+  hosts: all
+  tasks:
+   - name: Set root private key
+     authorized_key: user=root key="{{ lookup('file', 'vagrant.pub') }}" state=present
