@@ -14,3 +14,8 @@ This allows you to create your own OpenHIE demo VMs. Using this you can deploy a
 2. Run the `grab-playbooks.sh` script.
 3. Edit the files in the provisioning directory to fit your environment.
 4. Run `vagrant up` to launch the whole OpenHIE stack of VMs. To run a specific component (e.g. poc) run `vagrant up poc`.
+
+## TODO
+* Implement git submodules instead of script
+* allow variable for adding demo data
+* automate post install configuration
